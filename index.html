@@ -1,126 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>For My Airforce Hero ❤️</title>
+    <title>For My Flying Officer ✈️❤️</title>
 
     <style>
         body {
-            background: linear-gradient(to right, #ffe6f0, #ffd6eb);
-            text-align: center;
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
 
         h1 {
-            color: #ff3366;
-            margin-top: 30px;
+            margin-top: 40px;
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
         }
 
         .photo {
             width: 250px;
             border-radius: 20px;
-            margin: 15px;
-            box-shadow: 0 0 15px #ff99cc;
+            margin: 20px;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            transition: 0.4s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
 
         .photo:hover {
-            transform: scale(1.08);
+            transform: scale(1.1);
         }
 
-        .box {
-            background: white;
-            padding: 25px;
-            margin: 30px auto;
-            border-radius: 20px;
-            box-shadow: 0 0 20px pink;
-            width: 75%;
-        }
-
-        button {
-            padding: 12px 25px;
-            background: #ff3366;
-            color: white;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #e6005c;
-        }
-
-        .message {
+        #specialMessage {
             display: none;
-            font-size: 18px;
-            margin-top: 20px;
-            color: #444;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 800px;
+            font-size: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 2s ease;
         }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .heart {
+            position: fixed;
+            color: red;
+            font-size: 20px;
+            animation: float 4s linear infinite;
+        }
+
+        @keyframes float {
+            0% {transform: translateY(100vh);}
+            100% {transform: translateY(-10vh);}
+        }
+
+        footer {
+            margin-top: 50px;
+            color: white;
+            font-size: 18px;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <h1>Happy Valentine’s Day My Airforce Hero ❤️</h1>
+    <h1>For My Flying Officer ✈️❤️</h1>
 
-    <div class="box">
-        <p><b>if (boy == "You") {</b></p>
-        <p> &nbsp;&nbsp;heart.status = "Forever Yours";</p>
-        <p> &nbsp;&nbsp;distance = temporary;</p>
-        <p> &nbsp;&nbsp;love = infinite;</p>
-        <p><b>}</b></p>
-    </div>
+    <img src="https://i.ibb.co/jsbkRWx/94955ca7-0e6e-407c-a335-93cb78ef6009.jpg" class="photo" onclick="showMessage()">
+    <img src="https://i.ibb.co/zWCwhMzG/4a48a18d-f95f-4f42-b7ac-7819213e36c0.jpg" class="photo" onclick="showMessage()">
 
-    <div class="box">
+    <div id="specialMessage">
         <p>
-        The days we spent together here were some of the most beautiful chapters of my life.
-        Every ordinary day became special because you were in it. 
-        You made me smile without trying, supported me without asking,
-        and loved me in ways that made my world feel safe and complete.
-        Now you are going far away to serve the nation, and even though the distance
-        will be there between us, my heart feels nothing but pride.
-        I am so proud of the man you are — strong, brave, and full of dedication.
-        We may enter a long-distance relationship, but I promise you this:
-        no kilometers, no time zones, and no busy schedules can reduce what I feel for you.
-        I will be here, coding my dreams and building my career,
-        waiting for the moments we reunite and create even more beautiful memories.
-        You are not just my love, you are my strength.
-        And no matter where the Air Force takes you,
-        my heart will always choose you, every single day.
+            My dearest Flying Officer ✈️❤️,  
+            The days we spent together here will always be my favorite chapters of life.  
+            Every morning felt brighter because of you, every ordinary moment turned magical just because you were there. You made even the simplest days feel so special, so warm, so full of love 🥹💖.  
+
+            Now as you prepare to fly high and go far away, my heart feels proud and emotional at the same time. Proud because you wear your uniform with courage and dedication. Emotional because the distance between us will grow — but never the love ❤️.  
+
+            I know this journey will not be easy. There will be miles between us, different schedules, missed hugs, and long waits. But what we have is stronger than distance, stronger than silence, stronger than time itself.  
+
+            I will count days, not because I am sad — but because each day brings us closer to meeting again. I will support you, cheer for you, pray for your safety, and love you louder even from far away.  
+
+            You are not just my hero in uniform… you are my comfort, my happiness, my safe place 🫶💞.  
+
+            No matter how far you fly, remember — my heart flies with you.  
+            And no matter how many skies you conquer, you will always come back to someone who loves you endlessly ❤️✨  
+
+            This is not goodbye.  
+            This is “See you soon, my Flying Officer.” 💌💫  
         </p>
     </div>
 
-    <h2>Click Our Photos For a Surprise 💌</h2>
+    <footer>
+        Made with love by your favorite Software Developer 💻❤️
+    </footer>
 
-<img src="https://i.ibb.co/jsbkRWx/94955ca7-0e6e-407c-a335-93cb78ef6009.jpg" class="photo"> 
-<img src="https://i.ibb.co/zWCwhMzG/4a48a18d-f95f-4f42-b7ac-7819213e36c0.jpg" class="photo">
+<script>
 
-    <div class="message" id="loveMessage">
-        I love you more than words, more than distance, and more than all the lines of code in this world ❤️
-    </div>
+function showMessage() {
+    document.getElementById("specialMessage").style.display = "block";
+    createHearts();
+}
 
-    <br><br>
+function createHearts() {
+    for(let i = 0; i < 20; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        document.body.appendChild(heart);
 
-    <button onclick="playMusic()">Play Our Song 🎵</button>
+        setTimeout(() => {
+            heart.remove();
+        }, 4000);
+    }
+}
 
-    <audio id="romanticSong">
-        <!-- Upload your own song file to repo and replace below -->
-        <source src="song.mp3" type="audio/mpeg">
-    </audio>
-
-    <script>
-        function showMessage() {
-            document.getElementById("loveMessage").style.display = "block";
-        }
-
-        function playMusic() {
-            document.getElementById("romanticSong").play();
-        }
-    </script>
+</script>
 
 </body>
 </html>
