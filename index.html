@@ -2,69 +2,123 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>For My Love ❤️</title>
+    <title>For My Airforce Hero ❤️</title>
+
     <style>
         body {
             background: linear-gradient(to right, #ffe6f0, #ffd6eb);
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
         h1 {
             color: #ff3366;
+            margin-top: 30px;
         }
+
         .photo {
             width: 250px;
             border-radius: 20px;
             margin: 15px;
             box-shadow: 0 0 15px #ff99cc;
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
+
+        .photo:hover {
+            transform: scale(1.08);
+        }
+
         .box {
             background: white;
-            padding: 20px;
-            margin: 20px auto;
+            padding: 25px;
+            margin: 30px auto;
             border-radius: 20px;
-            box-shadow: 0 0 15px pink;
-            width: 70%;
+            box-shadow: 0 0 20px pink;
+            width: 75%;
         }
+
         button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #ff3366;
             color: white;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             cursor: pointer;
             font-size: 16px;
         }
+
         button:hover {
             background: #e6005c;
+        }
+
+        .message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            color: #444;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Happy Valentine’s Day My Love ❤️</h1>
+    <h1>Happy Valentine’s Day My Airforce Hero ❤️</h1>
 
     <div class="box">
-        <p>You are the best thing that ever happened to me.</p>
-        <p>Even my code runs smoother when you smile 😘</p>
+        <p><b>if (boy == "You") {</b></p>
+        <p> &nbsp;&nbsp;heart.status = "Forever Yours";</p>
+        <p> &nbsp;&nbsp;distance = temporary;</p>
+        <p> &nbsp;&nbsp;love = infinite;</p>
+        <p><b>}</b></p>
     </div>
-
-    <img src="https://i.ibb.co/jsbkRWx/94955ca7-0e6e-407c-a335-93cb78ef6009.jpg" class="photo">
-    <img src="https://i.ibb.co/zWCwhMzG/4a48a18d-f95f-4f42-b7ac-7819213e36c0.jpg" class="photo">
 
     <div class="box">
-        <h2>Why I Love You 💖</h2>
-        <p>1. You support me always</p>
-        <p>2. You make Gurgaon feel like home 🥹</p>
-        <p>3. You are my forever person</p>
+        <p>
+        The days we spent together here were some of the most beautiful chapters of my life.
+        Every ordinary day became special because you were in it. 
+        You made me smile without trying, supported me without asking,
+        and loved me in ways that made my world feel safe and complete.
+        Now you are going far away to serve the nation, and even though the distance
+        will be there between us, my heart feels nothing but pride.
+        I am so proud of the man you are — strong, brave, and full of dedication.
+        We may enter a long-distance relationship, but I promise you this:
+        no kilometers, no time zones, and no busy schedules can reduce what I feel for you.
+        I will be here, coding my dreams and building my career,
+        waiting for the moments we reunite and create even more beautiful memories.
+        You are not just my love, you are my strength.
+        And no matter where the Air Force takes you,
+        my heart will always choose you, every single day.
+        </p>
     </div>
 
-    <button onclick="showMessage()">Click for Surprise 💌</button>
+    <h2>Click Our Photos For a Surprise 💌</h2>
+
+<img src="https://i.ibb.co/jsbkRWx/94955ca7-0e6e-407c-a335-93cb78ef6009.jpg" class="photo"> 
+<img src="https://i.ibb.co/zWCwhMzG/4a48a18d-f95f-4f42-b7ac-7819213e36c0.jpg" class="photo">
+
+    <div class="message" id="loveMessage">
+        I love you more than words, more than distance, and more than all the lines of code in this world ❤️
+    </div>
+
+    <br><br>
+
+    <button onclick="playMusic()">Play Our Song 🎵</button>
+
+    <audio id="romanticSong">
+        <!-- Upload your own song file to repo and replace below -->
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
 
     <script>
         function showMessage() {
-            alert("I love you more than all the lines of code in the world 💕");
+            document.getElementById("loveMessage").style.display = "block";
+        }
+
+        function playMusic() {
+            document.getElementById("romanticSong").play();
         }
     </script>
 
