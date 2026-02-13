@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>For My Flying Officer ✈️❤️</title>
+    <title>To My Flying Officer ✈️❤️</title>
 
     <style>
         body {
@@ -9,13 +9,13 @@
             padding: 0;
             text-align: center;
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
-            background-size: 400% 400%;
-            animation: gradientBG 10s ease infinite;
+            background: linear-gradient(-45deg, #ff4e50, #fc913a, #f9d423, #ff6a88, #a18cd1);
+            background-size: 500% 500%;
+            animation: gradientMove 12s ease infinite;
             overflow-x: hidden;
         }
 
-        @keyframes gradientBG {
+        @keyframes gradientMove {
             0% {background-position: 0% 50%;}
             50% {background-position: 100% 50%;}
             100% {background-position: 0% 50%;}
@@ -23,58 +23,65 @@
 
         h1 {
             margin-top: 40px;
-            font-size: 40px;
+            font-size: 42px;
             color: white;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            text-shadow: 3px 3px 12px rgba(0,0,0,0.4);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff; }
+            to { text-shadow: 0 0 25px #ffccff; }
         }
 
         .photo {
-            width: 250px;
-            border-radius: 20px;
+            width: 260px;
+            border-radius: 25px;
             margin: 20px;
             cursor: pointer;
-            transition: 0.4s;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: 0.5s;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
         }
 
         .photo:hover {
-            transform: scale(1.1);
+            transform: scale(1.15) rotate(2deg);
         }
 
         #specialMessage {
             display: none;
             margin: 40px auto;
-            width: 80%;
-            max-width: 800px;
+            width: 85%;
+            max-width: 900px;
             font-size: 20px;
             background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            animation: fadeIn 2s ease;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            animation: fadeSlide 2s ease;
+            line-height: 1.8;
         }
 
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(20px);}
+        @keyframes fadeSlide {
+            from {opacity: 0; transform: translateY(40px);}
             to {opacity: 1; transform: translateY(0);}
         }
 
         .heart {
             position: fixed;
-            color: red;
-            font-size: 20px;
-            animation: float 4s linear infinite;
+            font-size: 24px;
+            animation: floatUp 5s linear infinite;
         }
 
-        @keyframes float {
-            0% {transform: translateY(100vh);}
-            100% {transform: translateY(-10vh);}
+        @keyframes floatUp {
+            0% {transform: translateY(100vh) scale(1);}
+            100% {transform: translateY(-10vh) scale(1.5);}
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 60px;
             color: white;
             font-size: 18px;
+            padding-bottom: 30px;
         }
 
     </style>
@@ -82,56 +89,59 @@
 
 <body>
 
-    <h1>For My Flying Officer ✈️❤️</h1>
+<h1>For My Flying Officer ✈️❤️</h1>
 
-    <img src="https://i.ibb.co/jsbkRWx/94955ca7-0e6e-407c-a335-93cb78ef6009.jpg" class="photo" onclick="showMessage()">
-    <img src="https://i.ibb.co/zWCwhMzG/4a48a18d-f95f-4f42-b7ac-7819213e36c0.jpg" class="photo" onclick="showMessage()">
+<img src="https://i.ibb.co/jsbkRWx/94955ca7-0e6e-407c-a335-93cb78ef6009.jpg" class="photo" onclick="showMessage()">
+<img src="https://i.ibb.co/zWCwhMzG/4a48a18d-f95f-4f42-b7ac-7819213e36c0.jpg" class="photo" onclick="showMessage()">
 
-    <div id="specialMessage">
-        <p>
-            My dearest Flying Officer ✈️❤️,  
-            The days we spent together here will always be my favorite chapters of life.  
-            Every morning felt brighter because of you, every ordinary moment turned magical just because you were there. You made even the simplest days feel so special, so warm, so full of love 🥹💖.  
+<div id="specialMessage">
+<p>
+My dearest Flying Officer ✈️❤️,
 
-            Now as you prepare to fly high and go far away, my heart feels proud and emotional at the same time. Proud because you wear your uniform with courage and dedication. Emotional because the distance between us will grow — but never the love ❤️.  
+From the moment we met, my world quietly changed in the most beautiful way. The days we spent together here were not just days… they were memories stitched with laughter, comfort, late conversations, warm hugs, and those small silent moments that meant everything 🥹💞.
 
-            I know this journey will not be easy. There will be miles between us, different schedules, missed hugs, and long waits. But what we have is stronger than distance, stronger than silence, stronger than time itself.  
+You made ordinary days feel extraordinary. You made simple coffee breaks feel like special dates. You made random evenings feel like fairytales. Every time you smiled at me, it felt like the whole universe paused just to watch that moment 🌸✨.
 
-            I will count days, not because I am sad — but because each day brings us closer to meeting again. I will support you, cheer for you, pray for your safety, and love you louder even from far away.  
+Now you are preparing to fly higher, to chase your dreams, to serve with courage and honor. And while my heart feels heavy thinking about the distance, it also feels incredibly proud ❤️‍🔥. Proud of the man you are. Proud of the uniform you wear. Proud to love someone who protects the skies with bravery.
 
-            You are not just my hero in uniform… you are my comfort, my happiness, my safe place 🫶💞.  
+Yes, it will be long distance. Yes, there will be nights when I miss you a little more. Yes, there will be countdowns, silent tears, and endless waiting. But love like ours is not fragile — it is fearless 💪💖.
 
-            No matter how far you fly, remember — my heart flies with you.  
-            And no matter how many skies you conquer, you will always come back to someone who loves you endlessly ❤️✨  
+No matter how far you fly, my love will travel farther. No matter how high you soar, my prayers will surround you. No matter how many skies you conquer, remember there is someone here whose heart beats only for you 💌💫.
 
-            This is not goodbye.  
-            This is “See you soon, my Flying Officer.” 💌💫  
-        </p>
-    </div>
+You are not just my Flying Officer.  
+You are my comfort, my happiness, my calm in chaos, my biggest blessing 🫶❤️.
 
-    <footer>
-        Made with love by your favorite Software Developer 💻❤️
-    </footer>
+This is not goodbye.  
+This is just a new chapter of us — stronger, braver, deeper.
+
+Fly high, my love ✈️  
+And always remember — my heart flies with you 💕✨
+</p>
+</div>
+
+<footer>
+Made with endless love by your favorite Software Developer 💻❤️
+</footer>
 
 <script>
 
 function showMessage() {
     document.getElementById("specialMessage").style.display = "block";
-    createHearts();
+    launchHearts();
 }
 
-function createHearts() {
-    for(let i = 0; i < 20; i++) {
+function launchHearts() {
+    for (let i = 0; i < 30; i++) {
         let heart = document.createElement("div");
         heart.className = "heart";
-        heart.innerHTML = "❤️";
+        heart.innerHTML = "💖";
         heart.style.left = Math.random() * 100 + "vw";
-        heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
         document.body.appendChild(heart);
 
         setTimeout(() => {
             heart.remove();
-        }, 4000);
+        }, 5000);
     }
 }
 
